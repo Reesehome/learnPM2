@@ -1,5 +1,5 @@
 module.exports = {
-  apps : [{
+  apps: [{
     name: 'learnPM2',
     script: './app.js',
 
@@ -17,14 +17,14 @@ module.exports = {
     }
   }],
 
-  deploy : {
-    production : {
-      user : 'Administor',
-      host : '123.207.65.247',
-      ref  : 'origin/master',
-      repo : 'git@github.com:Reesehome/learnPM2.git',
-      path : '/inetpub/wwwroot/learnPM2',
-      'post-deploy' : 'git pull && npm install && pm2 reload ecosystem.config.js --env production'
+  deploy: {
+    production: {
+      user: 'Administrator',
+      host: '123.207.65.247',
+      ref: 'origin/master',
+      repo: 'git@github.com:Reesehome/learnPM2.git',
+      path: '/inetpub/wwwroot/learnPM2',
+      'post-deploy': 'git pull && npm install && pm2 reload ecosystem.config.js --env production'
     }
   }
 };
