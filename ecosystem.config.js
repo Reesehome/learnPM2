@@ -19,7 +19,7 @@ module.exports = {
   deploy: {
     production: {
       user: 'Administrator',
-      host: '123.207.65.247',
+      host: ['123.207.65.247'],
       ref: 'origin/master',
       repo: 'git@github.com:Reesehome/learnPM2.git',
       path: '/inetpub/wwwroot/learnPM2',
